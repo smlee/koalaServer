@@ -1,0 +1,67 @@
+navbar {
+
+  display: block;
+  background: #c5aac3;
+
+  fullstack-logo {
+    padding-top: 0px;
+    margin-right: 20px;
+    width: 50px;
+    float: left;
+    display: inline-block;
+  }
+  span{
+    color: #bcff5b;
+    line-height: 50px;
+    font-size: 32px;
+    font-weight: 300;
+    float: left;
+    display: inline-block;
+    margin: 0 20px 0 -10px;
+  }
+
+  a {
+    color: white;
+    text-transform: uppercase;
+    &:hover {
+      color: white;
+    }
+  }
+
+  navbar > .navbar-nav > ul > li {
+    &:hover {
+      background: #c083c5 !important;
+    }
+  }
+  .nav > li > a {
+    cursor: pointer;
+    &.active {
+      color: #bcff5b;
+    }
+    &:hover {
+      transition: color 0.2s;
+    }
+    &:focus {
+      color: #bcff5b;
+      background: transparent;
+    }
+  }
+
+  .login-button {
+    float: right;
+    margin-top: 8px;
+  }
+
+  .welcome {
+    float: right;
+    margin-top: 12px;
+    span {
+      color: white;
+    }
+    a {
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+
+}
