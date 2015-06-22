@@ -16,7 +16,11 @@ var schema = new mongoose.Schema({
     folder: {
         name: String,
         alias: String
+    },
+    child: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Folder'
     }
 });
 
-mongoose.model('Account', schema);
+mongoose.model('Folder', schema);
