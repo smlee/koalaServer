@@ -1,4 +1,24 @@
 <section id="home">
-    <fullstack-logo></fullstack-logo>
-    <rando-greeting></rando-greeting>
+    <fullstack-logo></fullstack-logo><br>
+    <h1 id="home-logo">KOALA</h1>
+    <!--<rando-greeting></rando-greeting>-->
+    <div id="login-container">
+        <form id="login-form" name="loginForm" ng-submit="loginForm.$valid && sendLogin(login)">
+
+            <alert type="danger" ng-show="error">
+                {{ error }}
+            </alert>
+
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="text" ng-model="login.email" class="form-control" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password</label>
+                <input type="password" ng-model="login.password" class="form-control" id="login-password" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>  <span>or <a href="">Register</a></span>
+        </form>
+    </div>
+
 </section>
